@@ -1,0 +1,79 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+  }
+.hero{
+    position: relative;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+}
+.hero__video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+}
+.hero__overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+.hero__content{
+    z-index: 1;
+}
+.container-custom{
+    width: 100%;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+.hero__scroll-btn{
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    transform: translateX(-50%);
+    z-index: 1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.hero__scroll-btn .bi-arrow-down{
+    transition-delay: 0.8s;
+    animation: bounce 1s infinite alternate;
+}
+@keyframes bounce{
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(10px);
+    }
+}
+
+
+
+@media (min-aspect-ratio: 16/9) {
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+}
