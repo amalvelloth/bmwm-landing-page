@@ -40,7 +40,7 @@ body{
 .hero__scroll-btn{
     position: absolute;
     left: 50%;
-    bottom: 25px;
+    bottom: 10px;
     transform: translateX(-50%);
     z-index: 1;
     color: white;
