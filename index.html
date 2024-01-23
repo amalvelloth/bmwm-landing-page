@@ -1,137 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="images/bmw.png" type="image/x-icon" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Prompt:wght@200&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Prompt:wght@200&family=Rubik:wght@500&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <title>BMW M series</title>
-  </head>
 
-  <body>
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
-      <div class="container">
-        <a href="#Models" class="navbar-brand"> </a>
-        <button
-          class="navbar-toggler"
-          data-bs-toggler="collapse"
-          data-bs-target="#menu"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="menu">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-              <a href="#Models" class="nav-link text-white">Models</a>
-            </li>
-            <li class="nav-item">
-              <a href="#Magazines" class="nav-link text-white">Magazines</a>
-            </li>
-            <li class="nav-item">
-              <a href="#Motorsport" class="nav-link text-white">Motorsport</a>
-            </li>
-          </ul>
-          <a href="">
-            <img
-              src="images/bmw.png"
-              alt=""
-              width="60"
-              height="60"
-              style="margin: 1em"
-            />
-          </a>
-          <a href="">
-            <img src="images/bmw m.png" alt="" width="90" height="40" />
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="images/bmw.png" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Prompt:wght@200&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Prompt:wght@200&family=Rubik:wght@500&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <title>BMW M series</title>
+</head>
+
+<body>
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+    <div class="container">
+      <a href="#Models" class="navbar-brand"> </a>
+      <button class="navbar-toggler" data-bs-toggler="collapse" data-bs-target="#menu" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a href="#Models" class="nav-link text-white">Models</a>
+          </li>
+          <li class="nav-item">
+            <a href="#Magazines" class="nav-link text-white">Magazines</a>
+          </li>
+          <li class="nav-item">
+            <a href="#Motorsport" class="nav-link text-white">Motorsport</a>
+          </li>
+        </ul>
+        <a href="">
+          <img src="images/bmw.png" alt="" width="60" height="60" style="margin: 1em" />
+        </a>
+        <a href="">
+          <img src="images/bmw m.png" alt="" width="90" height="40" />
+        </a>
+      </div>
+    </div>
+  </nav>
+  <!--Navigation End-->
+
+  <!--Hero Start-->
+  <section class="hero">
+    <div class="hero__overlay"></div>
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" loading="lazy" class="hero__video">
+      <source src="videos/bmw m.mp4" type="video/mp4" />
+    </video>
+
+    <div class="hero__content h-100 container-custom position-relative">
+      <div class="d-flex h-100 align-items-end" style="padding-bottom: 6rem">
+        <div class="text-white">
+          <h1 class="fw-bold mb-1" style="font-family: prompt">
+            ALL BMW M AUTOMOBILES AT A GLANCE
+          </h1>
+          <a href="#" class="mt-2 btn btn-lg btn-outline-light" style="font-family: rubik" role="button">
+            <h5 class="fw-bold mb-1" style="font-family: prompt">
+              Experience
+            </h5>
           </a>
         </div>
       </div>
-    </nav>
-    <!--Navigation End-->
+    </div>
+  
 
-    <!--Hero Start-->
-    <section class="hero">
-      <div class="hero__overlay"></div>
-      <video
-        playsinline="playsinline"
-        autoplay="autoplay"
-        muted="muted"
-        loop="loop"
-        loading="lazy"
-        class="hero__video"
-      >
-        <source src="videos/bmw m.mp4" type="video/mp4" />
-      </video>
-
-      <div class="hero__content h-100 container-custom position-relative">
-        <div class="d-flex h-100 align-items-end" style="padding-bottom: 6rem">
-          <div class="text-white">
-            <h1 class="fw-bold mb-1 " style="font-family: prompt">
-              ALL BMW M AUTOMOBILES AT A GLANCE
-            </h1>
-            <a
-              href="#"
-              class="mt-2 btn btn-lg btn-outline-light"
-              style="font-family: rubik"
-              role="button"
-              ><h5 class="fw-bold mb-1 " style="font-family: prompt">
-                Experience
-              </h5></a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="align-items-end">
-    <a href="#scroll-down" class="hero__scroll-btn">
-      Explore<svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="16"
-        height="16"
-        fill="currentColor"
-        class="bi bi-arrow-down"
-        viewBox="0 0 16 16" 
-      >
-        <path
-          fill-rule="evenodd"
-          d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1"
-        />
+  <div class="align-items-end mt-3">
+    <a href="#scroll-down" class="hero__scroll-btn mt-3">
+      Explore<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down"
+        viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+          d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
       </svg>
     </a>
   </div>
-    <!--Hero End-->
 
-    <!--<div class="container">
-      <div class="col-12 col-sm-6 d-md-flex justify-content-md-center">
-        <img src="images/bmw xm group pic.jpeg" alt="" width="500" />
+</section>
+  <!--Hero End-->
+
+ 
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-md-6 mw-100 p-0">
+          <img src="images/bmw xm group pic.jpeg" alt="Image 1" class="img-fluid">
+          <!-- <h3>The New BMW XM Super SUV</h3> -->
+        </div>
+        <div class="col-xs-12 col-md-6 mw-100 p-0">
+          <img src="images/bmw-m-driving-experience.png" alt="Image 2" class="img-fluid">
+          
+           <!-- <h3>Driving Experience</h3> -->
+            
+          
+        </div>
       </div>
-    </div>-->
+    </div>
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
-  </body>
 </html>
