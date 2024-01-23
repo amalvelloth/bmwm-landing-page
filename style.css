@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     height: 100vh;
+    box-sizing: border-box;
   }
 .hero{
     position: relative;
@@ -64,7 +65,13 @@ body{
 }
 
 
+/*....Models Page....*/
 
+.hero__models__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 
 @media (min-aspect-ratio: 16/9) {
