@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
+    <meta charset="UTF-8" />
   <link rel="icon" href="images/bmw.png" type="image/x-icon" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./style.css" />
@@ -19,13 +18,12 @@
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
   <title>BMW M series</title>
 </head>
-
 <body>
-<!--------Navbar-->
+
   <nav class="navbar navbar-expand-lg navbar-transparent bg-transparent fixed-top">
     <div class="container-fluid">
       <!-- Use data-bs-toggle="offcanvas" and data-bs-target="#navbarTogglerDemo03" for offcanvas behavior -->
-      <button class="navbar-toggler text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarTogglerDemo03"
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarTogglerDemo03"
         aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -33,12 +31,12 @@
       <!-- Use offcanvas-start class for the offcanvas behavior -->
       <div class="offcanvas offcanvas-start" tabindex="-1" id="navbarTogglerDemo03"
         aria-labelledby="navbarTogglerDemo03Label">
-        <div class="offcanvas-header bg-black">
-          <h5 class="offcanvas-title" id="navbarTogglerDemo03Label">BMW M AUTOSPORT</h5>
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="navbarTogglerDemo03Label">Navbar</h5>
           <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <!-- Center the navbar links in the offcanvas body -->
-        <div class="offcanvas-body bg-black d-flex justify-content-center align-items-center">
+        <div class="offcanvas-body d-flex justify-content-center align-items-center">
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link text-white" href="models.html">Models</a>
@@ -65,69 +63,42 @@
     </div>
   </nav>
 
+    <!--Navbar
+  <nav class="navbar navbar-expand-sm navbar-dark fixed-top dropdown-nav" id="menu">
+    <div class="container">
+      <a href="#Models" class="navbar-brand"> </a>
+      <button class="navbar-toggler" data-bs-toggler="collapse" data-bs-target="#menu" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
 
-  <!--Navigation End-->
-
-  <!--Hero Start-->
-  <section class="hero h-100">
-    <div class="hero__overlay"></div>
-    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" loading="lazy" class="hero__video">
-      <source src="videos/bmw m.mp4" type="video/mp4" />
-    </video>
-
-    <div class="hero__content h-100 container-custom position-relative">
-      <div class="d-flex h-100 align-items-end" style="padding-bottom: 6rem">
-        <div class="text-white">
-          <h1 class="fw-bold mb-1" style="font-family: prompt">
-            ALL BMW M AUTOMOBILES AT A GLANCE
-          </h1>
-          <a href="#" class="mt-2 btn btn-lg btn-outline-light" style="font-family: rubik" role="button">
-            <h5 class="fw-bold mb-1" style="font-family: prompt">
-              Experience
-            </h5>
-          </a>
-        </div>
+      <div class="collapse navbar-collapse dropdown-nav" id="menu">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a href="models.html" class="nav-link text-white">Models</a>
+          </li>
+          <li class="nav-item">
+            <a href="magazines.html" class="nav-link text-white">Magazines</a>
+          </li>
+          <li class="nav-item">
+            <a href="motosport.html" class="nav-link text-white">Motorsport</a>
+          </li>
+        </ul>
+        <a href="index.html">
+          <img src="images/bmw.png" alt="" width="53" height="53" style="margin: 1em" />
+        </a>
+        <a href="index.html">
+          <img src="images/bmw m.png" alt="" width="85" height="37" />
+        </a>
       </div>
     </div>
+  </nav>--> 
+  <!--Navigation End-->   
 
-
-    <div class="align-items-end mt-3">
-      <a href="#scroll-down" class="hero__scroll-btn mt-3">
-        Explore<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-          class="bi bi-arrow-down" viewBox="0 0 16 16">
-          <path fill-rule="evenodd"
-            d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
-        </svg>
-      </a>
-    </div>
-
-  </section>
-  <!--Hero End-->
-  <a id="scroll-down"></a>
-
-  <div class="container-fluid position-relative">
-    <div class="row">
-      <div class="col-xs-12 col-md-6 mw-100 p-0">
-        <img src="images/bmw xm group pic.jpeg" alt="Image 1" class="img-fluid w-100">
-        <div class="text1" style="position: absolute; top: 30px; color: white; left: 20px; font-family: prompt;">
-          <h2>DRIVING EXPERINCE</h2>
-        </div>
-      </div>
-
-      <div class="col-xs-12 col-md-6 mw-100 p-0">
-        <img src="images/bmw-m-driving-experience.png" alt="Image 2" class="img-fluid w-100">
-        <div class="text" style="position: absolute; top: 30px; color: white; right: 20px;font-family: prompt">
-          <h2>DRIVING EXPERINCE</h2>
-        </div>
-      </div>
-
-    </div>
-  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
 </body>
-
 </html>

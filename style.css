@@ -4,9 +4,24 @@ body{
     height: 100vh;
     box-sizing: border-box;
   }
+
+
+/*..............................Navbar...........*/
+
+#navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 4;
+}
+
+
+
+/*..............................Hero.............*/
 .hero{
     position: relative;
-    height: 100vh;
     background-color: black;
     overflow: hidden;
 }
@@ -64,16 +79,6 @@ body{
     }
 }
 
-
-/*....Models Page....*/
-
-.hero__models__img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-
 @media (min-aspect-ratio: 16/9) {
     .back-video{
         width: 100%;
@@ -86,3 +91,36 @@ body{
         height: 100%;
     }
 }
+
+
+
+
+
+/*..............................Models Page.....*/
+
+
+
+.spacer {
+    height: 100vh;
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.layer1{
+    height: auto;
+    max-height: none;
+    max-width: none;
+    background-image: url(/images/bmw-models-cover.jpeg);
+}
+.layer{
+    background-image: url(images/low-poly-grid-layer.svg);
+}
+
+
+.hero__models__img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%; /* 100% of the viewport height */
+  }
