@@ -28,6 +28,20 @@ body{
     z-index: 4;
 }
 
+@media (max-width: 768px) {
+    .bmw-logo {
+        height: 36px;
+        width: 36px; /* Adjusted width for tablets */
+    }
+}
+@media (max-width: 768px) {
+    .bmw-m-logo {
+        height: 22px;
+        width: 56px; /* Adjusted width for tablets */
+    }
+}
+
+
 
 
 /*..............................Hero.............*/
