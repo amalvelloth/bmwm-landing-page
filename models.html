@@ -2,103 +2,118 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="images/bmw.png" type="image/x-icon" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Prompt:wght@200&display=swap"
-        rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Prompt:wght@200&family=Rubik:wght@500&display=swap"
-        rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-    <title>BMW M series</title>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="images/bmw.png" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Prompt:wght@200&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Prompt:wght@200&family=Rubik:wght@500&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <title>BMW M series</title>
 
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
-    <div class="container-fluid">
-      <!-- Toggler on the left side -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarTogglerDemo03"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="white" class="bi bi-list"
-          viewBox="0 0 16 16">
-          <path fill-rule="evenodd"
-            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
-        </svg>
-      </button>
+  <div class="navbar-container position-relative">
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent position-absolute w-100">
+      <div class="container-fluid px-5">
+        <!-- Toggler on the left side -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarTogglerDemo03"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="white" class="bi bi-list"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+          </svg>
+        </button>
 
 
 
 
-      <!------ Offcanvas content ------>
-      <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="navbarTogglerDemo03"
-        aria-labelledby="navbarTogglerDemo03Label">
+        <!------ Offcanvas content ------>
+        <div class="offcanvas offcanvas-start bg-black" tabindex="-1" id="navbarTogglerDemo03"
+          aria-labelledby="navbarTogglerDemo03Label">
 
-        <div class="offcanvas-body d-flex flex-column justify-content-center align-items-center">
-          <!-- Navbar links -->
-          <ul class="navbar-nav text-center">
+          <div class="offcanvas-body d-flex flex-column justify-content-center align-items-center">
+            <!-- Navbar links -->
+            <ul class="navbar-nav fw-bold text-center">
               <li class="nav-item">
-                  <a class="nav-link text-white" href="models.html"> Models</a>
+                <a class="nav-link text-white" href="models.html"> Models</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link text-white" href="magazines.html">Magazines</a>
+                <a class="nav-link text-white" href="magazines.html">Magazines</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link text-white" href="motorsport.html">Motorsport</a>
+                <a class="nav-link text-white" href="motorsport.html">Motorsport</a>
               </li>
-          </ul>
-      
-          <!-- Close button -->
-          <button class="navbar-toggler mt-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarTogglerDemo03"
-              aria-expanded="false" aria-label="Toggle navigation" style="position: absolute; top: 10px; right: 10px;">
+            </ul>
+
+            <!-- Close button -->
+            <button class="navbar-toggler mt-3" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation"
+              style="position: absolute; top: 10px; right: 10px;">
               <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="white" class="bi bi-x-lg"
-                  viewBox="0 0 16 16">
-                  <path
-                      d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                viewBox="0 0 16 16">
+                <path
+                  d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
               </svg>
-          </button>
-      </div>
-      
-
-      </div>
-      <!-- Offcanvas content End -->
-
-      <!-- Navbar brand/logo -->
-      <div class="d-flex justify-content-end align-items-center">
-        <a href="index.html">
-          <img class="bmw-logo m-2" src="images/bmw.png" alt="" width="53" height="53" />
-        </a>
-        <a href="index.html">
-          <img class="bmw-m-logo" src="images/bmw m.png" alt="" width="85" height="32" />
-        </a>
-      </div>
-      <!-- Navbar brand/logo End -->
-    </div>
-  </nav>
-    <!--Navigation End-->
+            </button>
+          </div>
 
 
-
-    <!--Hero Section-->
-    <section class="hero">
-        <div class="spacer layer1">
         </div>
-    </section>
-    <!--Hero Section End-->
+        <!-- Offcanvas content End -->
 
-    <div class="spacer layer"></div>
+        <!-- Navbar brand/logo -->
+        <div class="d-flex justify-content-end align-items-center">
+          <a href="index.html">
+            <img class="bmw-logo m-2" src="images/bmw.png" alt="" width="53" height="53" />
+          </a>
+          <a href="index.html">
+            <img class="bmw-m-logo" src="images/bmw m.png" alt="" width="85" height="32" />
+          </a>
+        </div>
+        <!-- Navbar brand/logo End -->
+      </div>
+    </nav>
+  </div>
+  <!--Navigation End-->
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+
+  <!--Hero Section-->
+  <section class="hero">
+    <div class="spacer cover-img ">
+    </div>
+  </section>
+  <!--Hero Section End-->
+
+  <div class="spacer layer">
+    <img src="images/bmw-m2-coupe.png" alt="">
+    <p class="fs-6 p-3 fw-normal">Driven by motorsport, the BMW M automobiles more than live up to the highest standards
+      of agility, dynamics and
+      power. Powerful engines combined with an expressive design, exclusive accessories and high functionality let you
+      feel just how much passion lies in every single part of these high-performance automobiles.</p>
+    <h3 class="fs-3 p-3 fw-normal">
+      BMW M AUTOMOBILES
+    </h3>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

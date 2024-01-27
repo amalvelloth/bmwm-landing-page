@@ -133,7 +133,7 @@ body{
     background-position: center;
     background-size: cover;
 }
-.layer1{
+.cover-img{
     height: auto;
     max-height: none;
     max-width: none;
@@ -149,3 +149,21 @@ body{
     width: 100%;
     height: 100%; /* 100% of the viewport height */
   }
+
+  .navbar::after {
+    content: ''; /* Create pseudo-element for the border */
+    position: absolute; /* Position the border relative to the navbar */
+    bottom: 0; /* Place the border at the bottom */
+    left: 10%; /* Align the border with the left edge of the navbar */
+    right: 15%;
+    border-bottom: 0.1px solid rgba(255, 255, 255, 0.3); /* Lighter white underline */
+}
+  .navbar-container {
+    position: relative;
+  }
+  .navbar {
+    z-index: 1000; /* Ensure the navbar stays above the image */
+  }
+.nav-link {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
