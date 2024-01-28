@@ -150,12 +150,14 @@ body{
     height: 100%; /* 100% of the viewport height */
   }
 
-  .navbar::after {
-    content: ''; /* Create pseudo-element for the border */
-    position: absolute; /* Position the border relative to the navbar */
-    bottom: 0; /* Place the border at the bottom */
-    left: 10%; /* Align the border with the left edge of the navbar */
-    right: 15%;
+  .navbar-nav::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    margin-left: 1.7rem;
+    right: 0%;
+    margin-right: 11rem;
     border-bottom: 0.1px solid rgba(255, 255, 255, 0.3); /* Lighter white underline */
 }
   .navbar-container {
@@ -166,4 +168,26 @@ body{
   }
 .nav-link {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.offcanvas {
+    align-items: start;
+}
+.container-fluid{
+    padding: 0 5rem;
+}
+
+@media (max-width: 991px) {
+    .offcanvas{
+        align-items: center;
+    }
+    .navbar-nav::after{
+        display: none;
+    }
+
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
 }
