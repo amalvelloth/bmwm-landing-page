@@ -1,157 +1,37 @@
-body{
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    box-sizing: border-box;
-  }
-
-
-  :root{
-    --primary-color: #0a1118;
-    --primary-color-highlight: #233D54;
-    --bs-body-bg: #FBF0F6;
-    --bs-body-font-family: 'Montserrat',sans-serif;
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  box-sizing: border-box;
 }
 
-.header{
-    z-index: 2;
+:root {
+  --primary-color: #0a1118;
+  --primary-color-highlight: #233d54;
+  --bs-body-bg: #fbf0f6;
+  --bs-body-font-family: "Montserrat", sans-serif;
 }
 
-/*..............................Navbar...........*/
+.header {
+  z-index: 2;
+}
+
+/*___________________________________________Navbar Start________________*/
 
 #navbar {
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 4;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 4;
 }
-
-@media (max-width: 768px) {
-    .bmw-logo {
-        height: 36px;
-        width: 36px; /* Adjusted width for tablets */
-    }
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
 }
-@media (max-width: 768px) {
-    .bmw-m-logo {
-        height: 22px;
-        width: 56px; /* Adjusted width for tablets */
-    }
-}
-
-
-
-
-/*..............................Hero.............*/
-.hero{
-    position: relative;
-    background-color: black;
-    overflow: hidden;
-}
-.hero__video{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    transform: translateX(-50%) translateY(-50%);
-}
-.hero__overlay{
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background-color: black;
-    opacity: 0.5;
-    z-index: 1;
-}
-.hero__content{
-    z-index: 1;
-}
-.container-custom{
-    width: 100%;
-    padding: 0 1rem;
-    margin: 0 auto;
-}
-.hero__scroll-btn{
-    position: absolute;
-    left: 50%;
-    bottom: 20px;
-    transform: translateX(-50%);
-    z-index: 1;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-}
-
-.hero__scroll-btn .bi-arrow-down{
-    transition-delay: 0.8s;
-    animation: bounce 1s infinite alternate;
-}
-@keyframes bounce{
-    from {
-        transform: translateY(0px);
-    }
-    to {
-        transform: translateY(10px);
-    }
-}
-
-@media (min-aspect-ratio: 16/9) {
-    .back-video{
-        width: 100%;
-        height: auto;
-    }
-}
-@media (max-aspect-ratio: 16/9) {
-    .back-video{
-        width: auto;
-        height: 100%;
-    }
-}
-
-
-
-
-
-/*..............................Models Page.....*/
-
-
-
-.spacer {
-    height: 200vh;
-    aspect-ratio: 960/300;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-.cover-img{
-    height: auto;
-    max-height: none;
-    max-width: none;
-    background-image: url(/images/bmw-models-cover.jpeg);
-}
-.layer{
-    background-image: url(images/low-poly-grid-layer.svg);
-}
-
-
-.hero__models__img{
-    object-fit: cover;
-    width: 100%;
-    height: 100%; /* 100% of the viewport height */
-  }
-
-  .navbar-nav::after {
-    content: '';
+.navbar-nav::after {
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0%;
@@ -159,35 +39,160 @@ body{
     right: 0%;
     margin-right: 11rem;
     border-bottom: 0.1px solid rgba(255, 255, 255, 0.3); /* Lighter white underline */
-}
+  }
   .navbar-container {
     position: relative;
   }
   .navbar {
     z-index: 1000; /* Ensure the navbar stays above the image */
   }
-.nav-link {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.offcanvas {
+  .nav-link {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .offcanvas {
     align-items: start;
-}
-.container-fluid{
+  }
+  .container-fluid {
     padding: 0 5rem;
+  }
+
+/*___________________________________________Navbar End________________*/
+
+
+/*___________________________________________Hero__________________*/
+.hero {
+  position: relative;
+  background-color: black;
+  overflow: hidden;
+}
+.hero__video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translateX(-50%) translateY(-50%);
+}
+.hero__overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+.hero__content {
+  z-index: 1;
+}
+.container-custom {
+  width: 100%;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+.hero__scroll-btn {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  z-index: 1;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
 }
 
+.hero__scroll-btn .bi-arrow-down {
+  transition-delay: 0.8s;
+  animation: bounce 1s infinite alternate;
+}
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(10px);
+  }
+}
+
+
+
+
+/*______________________________________________Models Page______________*/
+
+.spacer1 {
+  aspect-ratio: 21/9;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.cover-img {
+  height: auto;
+  max-height: none;
+  max-width: none;
+  background-image: url(/images/bmw-models-cover.jpeg);
+}
+.spacer2 {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+.layer {
+  background-image: url(images/low-poly-grid-haikei\ \(1\).svg);
+}
+
+.hero__models__img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%; /* 100% of the viewport height */
+}
+
+
+
+
+/*___________________________________Media Queries_________*/
+
+@media (min-aspect-ratio: 16/9) {
+    .back-video {
+      width: 100%;
+      height: auto;
+    }
+  }
+  @media (max-aspect-ratio: 16/9) {
+    .back-video {
+      width: auto;
+      height: 100%;
+    }
+  }
+  @media (max-width: 576px) {
+
+  }
+  @media (max-width: 768px) {
+    .bmw-logo {
+        height: 36px;
+        width: 36px;
+      }
+    .bmw-m-logo {
+      height: 22px;
+      width: 56px; /
+    }
+  }
 @media (max-width: 991px) {
-    .offcanvas{
-        align-items: center;
-    }
-    .navbar-nav::after{
-        display: none;
-    }
-
+  .offcanvas {
+    align-items: center;
+  }
+  .navbar-nav::after {
+    display: none;
+  }
 }
+@media (max-width: 1200px) {
 
-.navbar-toggler:focus {
-    outline: none;
-    box-shadow: none;
 }
