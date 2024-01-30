@@ -169,7 +169,7 @@ body {
   z-index: 2;
   transition: 1s;
 }
-img-fluid:hover{
+.img-fluid:hover{
   transform: scale(1.2);
 }
 .full-width-content{
@@ -179,9 +179,10 @@ img-fluid:hover{
 .column-wrapper a{
   text-decoration: none;
   color: inherit;
+  font-weight: 700;
 }
 .column-wrapper a:hover{
-  color: blue;
+  color: indigo;
 }
 
 
