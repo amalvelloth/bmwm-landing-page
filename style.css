@@ -126,13 +126,13 @@ body {
 /*______________________________________________Models Page______________*/
 
 .spacer1 {
-  aspect-ratio: 21/10;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .cover-img {
+  aspect-ratio: 16/9;
   height: auto;
   max-height: none;
   max-width: none;
@@ -154,17 +154,39 @@ body {
   width: 100%;
   height: 100%; /* 100% of the viewport height */
 }
-.container span {
-  font-size: 5em;
+
+.container-fluid span {
+  font-size: 5.6em;
   color: rgb(185, 185, 185);
   z-index: 1;
   position: absolute;
-  top: -30px;
+  margin-top: -30px;
+  font-family: prompt,sans-serif;
+  font-weight: 300;
 }
 .img-fluid{
   position: relative;
   z-index: 2;
+  transition: 1s;
 }
+img-fluid:hover{
+  transform: scale(1.2);
+}
+.full-width-content{
+  width: 100%;
+  box-sizing: border-box;
+}
+.column-wrapper a{
+  text-decoration: none;
+  color: inherit;
+}
+.column-wrapper a:hover{
+  color: blue;
+}
+
+
+
+
 
 
 /*___________________________________Media Queries_________*/
@@ -182,8 +204,10 @@ body {
     }
   }
   @media (max-width: 576px) {
-
+    
   }
+  
+
   @media (max-width: 768px) {
     .bmw-logo {
         height: 36px;
@@ -204,4 +228,9 @@ body {
 }
 @media (max-width: 1200px) {
 
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .container-fluid span{
+    
+  }
 }
