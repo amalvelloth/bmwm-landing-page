@@ -185,8 +185,9 @@ body {
   color: indigo;
 }
 
-
-
+.container-fluid{
+  overflow-x: hidden;
+}
 
 
 
@@ -209,7 +210,7 @@ body {
   }
   
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     .bmw-logo {
         height: 36px;
         width: 36px;
@@ -218,6 +219,7 @@ body {
       height: 22px;
       width: 56px; /
     }
+    
   }
 @media (max-width: 991px) {
   .offcanvas {
