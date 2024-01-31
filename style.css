@@ -57,6 +57,45 @@ body {
     padding: 0 5rem;
   }
 
+
+
+
+
+
+.nav-link{
+  text-align: start;
+}
+  .offcanvas-body .navbar-nav .nav-link {
+    position: relative;
+    text-decoration: none;
+}
+
+
+
+
+.offcanvas-body .navbar-nav {
+  text-align: left;
+}
+.offcanvas-body{
+  width: 100%;
+  text-align: start;
+}
+
+.text-white{
+
+}
+.offcanvas-body .navbar-nav .nav-item {
+  width: 100%; /* Make each nav item take up the full width */
+}
+
+.offcanvas-body .navbar-nav .nav-link {
+  display: block;
+  padding: 1rem; /* Adjust padding as needed */
+  width: 100%;
+}
+
+
+
 /*___________________________________________Navbar End________________*/
 
 
@@ -164,12 +203,12 @@ body {
   font-family: prompt,sans-serif;
   font-weight: 300;
 }
-.img-fluid{
+.column-wrapper .img-fluid{
   position: relative;
   z-index: 2;
   transition: 1s;
 }
-.img-fluid:hover{
+.column-wrapper .img-fluid:hover{
   transform: scale(1.2);
 }
 .full-width-content{
@@ -187,6 +226,19 @@ body {
 
 .container-fluid{
   overflow-x: hidden;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Apply fade-in animation to image and text */
+.fade-in {
+  animation: fadeIn 1.5s ease-in-out;
 }
 
 
@@ -225,8 +277,17 @@ body {
   .offcanvas {
     align-items: center;
   }
-  .navbar-nav::after {
-    display: none;
+  .offcanvas-body .navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 0.5px;
+    background-color: white;
+}
+  .navbar ul{
+    width: 100%;
   }
 }
 @media (max-width: 1200px) {
