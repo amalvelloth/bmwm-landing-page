@@ -58,6 +58,10 @@ body {
   background-size: cover;
   background-position: center;
   }
+  
+
+
+
 
 
 
@@ -81,10 +85,6 @@ body {
 .offcanvas-body{
   width: 100%;
   text-align: start;
-}
-
-.text-white{
-
 }
 .offcanvas-body .navbar-nav .nav-item {
   width: 100%; /* Make each nav item take up the full width */
@@ -160,8 +160,20 @@ body {
     transform: translateY(10px);
   }
 }
+.transparent-btn {
+  background-color: transparent;
+  padding: 0.7rem 5rem;
+  color: white;
+  border: 2.1px solid white;
+  transition: all 0.3s ease;
+  font-family: 'Noto Sans Thai', sans-serif;
+}
 
-
+.transparent-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Transparent white */
+  color: white;
+  border-color: white;
+}
 
 
 /*______________________________________________Models Page______________*/
