@@ -198,11 +198,11 @@ body {
 
 .container-fluid span {
   font-size: 5.6em;
-  color: rgb(185, 185, 185);
+  color: rgb(160, 160, 160);
   z-index: 1;
   position: absolute;
   margin-top: -30px;
-  font-family: prompt,sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   font-weight: 300;
 }
 .column-wrapper .img-fluid{
