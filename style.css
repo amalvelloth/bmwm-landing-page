@@ -53,8 +53,10 @@ body {
   .offcanvas {
     align-items: start;
   }
-  .container-fluid {
-    padding: 0 5rem;
+  .models-hero .container-fluid {
+    background-image: url('images/low-poly-grid-haikei\ \(7\).svg');
+  background-size: cover;
+  background-position: center;
   }
 
 
@@ -185,7 +187,7 @@ body {
     background-size: cover;
   }
 .layer {
-  background-image: url(images/low-poly-grid-haikei\ \(1\).svg);
+  background-image: url(images/low-poly-grid-haikei\ \(3\).svg);
 }
 
 .hero__models__img {
