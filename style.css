@@ -254,7 +254,22 @@ body {
 .fade-in {
   animation: fadeIn 1.5s ease-in-out;
 }
-
+.container-fluid .column-wrapper h6{
+  font-family: prompt;
+  font-weight: 900;
+}
+.container-fluid .column-wrapper a{
+  font-family: 'Noto Sans Thai', sans-serif;
+  font-weight: bold;
+  color: rgb(149, 149, 149);
+  transition: color 0.5s ease;
+}
+.container-fluid .column-wrapper a:hover{
+  color: rgb(0, 75, 145);;
+}
+.container-fluid .column-wrapper a:hover .bi{
+  visibility: hidden;
+}
 
 
 /*___________________________________Media Queries_________*/
