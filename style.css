@@ -70,6 +70,7 @@ body {
 
 .nav-link{
   text-align: start;
+  font-family: 'Noto Sans Thai', sans-serif;
 }
   .offcanvas-body .navbar-nav .nav-link {
     position: relative;
@@ -90,11 +91,8 @@ body {
   width: 100%; /* Make each nav item take up the full width */
 }
 
-.offcanvas-body .navbar-nav .nav-link {
-  display: block;
-  padding: 1rem; /* Adjust padding as needed */
-  width: 100%;
-}
+
+
 
 
 
@@ -170,7 +168,7 @@ body {
 }
 
 .transparent-btn:hover {
-  background-color: rgba(255, 255, 255, 0.2); /* Transparent white */
+  background-color: rgba(255, 255, 255, 0.2);
   color: white;
   border-color: white;
 }
@@ -205,7 +203,7 @@ body {
 .hero__models__img {
   object-fit: cover;
   width: 100%;
-  height: 100%; /* 100% of the viewport height */
+  height: 100%; 
 }
 
 .container-fluid span {
@@ -314,6 +312,28 @@ body {
     width: 100%;
     height: 0.5px;
     background-color: white;
+}
+
+
+
+
+
+.offcanvas-body .navbar-nav .nav-link::before {
+  content: '';
+  position: absolute;
+  bottom: -1.5px; /* Adjust the spacing between the underlines */
+  left: 0;
+  width: 0; /* Initially set width to 0 */
+  height: 5px;
+  background-color: transparent; /* Transparent by default */
+  transition: width 0.3s ease, transform 0.3s ease; /* Add transition for smooth effect */
+  transform-origin: left; /* Set transform origin to left */
+  transform: scaleX(0); /* Initially scale to 0, making it invisible */
+}
+.offcanvas-body .navbar-nav .nav-link:hover::before {
+  width: 100%; /* Expand the width of the second underline on hover */
+  background-color: #009ADA; /* Change the color of the second underline on hover */
+  transform: scaleX(1); /* Scale from 0 to 1 to make it visible */
 }
   .navbar ul{
     width: 100%;

@@ -30,10 +30,26 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
   <title>BMW M series</title>
-  <script src="https://kit.fontawesome.com/ca475b2159.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/ca475b2159.js" crossorigin="anonymous">
+  </script>
 </head>
 
 <body>
+  <button id="redirectButton">Click to Redirect</button>
+
+  <!-- You can include your JavaScript files here -->
+  <script>
+      // Function to perform redirection
+      function redirectToPage() {
+          window.location.href = 'index.html'; // Redirect to the desired page
+      }
+
+      // Add event listener to the button
+      document.getElementById('models-pa').addEventListener('click', function() {
+          // Delay the redirection by 3 seconds (3000 milliseconds)
+          setTimeout(redirectToPage, 3000);
+      });
+  </script>
   <!-------- Navigation Start -------->
   <div class="navbar-container position-relative">
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent position-absolute w-100">
@@ -48,8 +64,7 @@
               d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
           </svg>
         </button>
-
-
+]
 
 
         <!------ Offcanvas content ------>
@@ -158,16 +173,18 @@
     </div>
   </div>
 
+
   <div class="container m-0 p-0 justify-content-start">
-    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" loading="lazy" class="hero2__video w-100">
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" loading="lazy"
+      class="hero2__video w-100 h-100">
       <source src="videos/bmw-i5-m60.mp4" type="video/mp4" />
     </video>
   </div>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
