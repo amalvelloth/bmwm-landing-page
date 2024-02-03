@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Page</title>
+</head>
+<body>
+    <h1>Navigation Page</h1>
+    <p>Welcome to the navigation page.</p>
+
+    <!-- Add navigation links with IDs -->
+    <nav>
+        <ul>
+            <li><a href="#" id="modelsLink">Models</a></li>
+            <li><a href="#" id="magazinesLink">Magazines</a></li>
+            <li><a href="#" id="motorsportLink">Motorsport</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        // Function to perform the redirection with delay
+        function redirectToPageWithDelay(linkId, targetUrl, delay) {
+            // Add event listener to the specified link
+            document.getElementById(linkId).addEventListener('click', function(event) {
+                // Prevent the default behavior of the link
+                event.preventDefault();
+
+                // Delay the redirection by the specified duration
+                setTimeout(function() {
+                    // Redirect to the target URL
+                    window.location.href = targetUrl;
+                }, delay);
+            });
+        }
+
+        // Call the function for each navigation link
+        redirectToPageWithDelay('modelsLink', 'models.html', 3000); // Delayed redirect for Models
+        redirectToPageWithDelay('magazinesLink', 'magazines.html', 5000); // Delayed redirect for Magazines
+        redirectToPageWithDelay('motorsportLink', 'motorsport.html', 7000); // Delayed redirect for Motorsport
+    </script>
+</body>
+</html>

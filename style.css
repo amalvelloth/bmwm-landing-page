@@ -60,14 +60,6 @@ body {
   }
   
 
-
-
-
-
-
-
-
-
 .nav-link{
   text-align: start;
   font-family: 'Noto Sans Thai', sans-serif;
@@ -90,9 +82,6 @@ body {
 .offcanvas-body .navbar-nav .nav-item {
   width: 100%; /* Make each nav item take up the full width */
 }
-
-
-
 
 
 
@@ -268,7 +257,11 @@ body {
 .container-fluid .column-wrapper a:hover .bi{
   visibility: hidden;
 }
-
+.hero-video {
+  width: 100%; /* Set video width to 100% of its container */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 800px; /* Set maximum width for the video */
+}
 
 /*___________________________________Media Queries_________*/
 
