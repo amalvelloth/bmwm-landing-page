@@ -160,18 +160,29 @@
 
   <div class="container-fluid p-0">
     <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 d-flex p-0">
-            <!-- Video Column -->
-            <div class="col-12 p-0">
-                <video playsinline autoplay muted loop class="hero-video w-100">
-                    <source src="videos/bmw-i5-m60.mp4" type="video/mp4" />
-                </video>
-            </div>
+        <!-- Video Column -->
+        <div class="col-lg-6 col-md-6 p-0 video-column">
+            <video playsinline autoplay muted loop>
+                <source src="videos/bmw-i5-m60.mp4" type="video/mp4" />
+            </video>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 p-0">
-            <!-- Images Column -->
-            <img src="images/bmwm-logo.jpg" alt="" class="img-fluid w-100">
-            <img src="images/m2-bort-to-thrill.jpg" alt="" class="img-fluid w-100">
+        <!-- Images Column -->
+        <div class="col-lg-6 col-md-6 p-0">
+            <div class="image-container">
+                <img src="images/bmwm-logo.jpg" alt="BMW Logo" class="img-fluid w-100">
+                <div class="image-overlay">
+                    <h3 class="image-title" style="font-family: oxygen">M - HISTORY OF AN ICON</h3>
+                    <button class="transparent-btn fw-bolder">Read more</button>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="images/m2-bort-to-thrill.jpg" alt="BMW M2" class="img-fluid w-100">
+                <div class="image-overlay">
+                    <h3 class="image-title" style="font-family: oxygen">BORN TO THRILL</h3>
+                    <h5 class="mb-2" style="font-family: oxygen">M Performance Parts for the BMW M2</h5>
+                    <button class="transparent-btn fw-bolder">Read more</button>
+                </div>
+            </div>
         </div>
     </div>
 </div>

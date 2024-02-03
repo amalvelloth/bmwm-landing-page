@@ -54,7 +54,7 @@ body {
     align-items: start;
   }
   .models-hero .container-fluid {
-    background-image: url('images/low-poly-grid-haikei\ \(7\).svg');
+    background-image: url(images/low-poly-grid-haikei.svg);
   background-size: cover;
   background-position: center;
   }
@@ -161,6 +161,42 @@ body {
   color: white;
   border-color: white;
 }
+
+/*__________________main page contents_________*/
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+  transition: 0.5s ease;
+}
+
+.image-overlay h3 {
+  margin-bottom: 10px;
+}
+
+.image-overlay a {
+  color: #fff;
+}
+
+.video-column {
+  padding: 0;
+}
+
+.video-column video {
+  width: 100%;
+  height: auto;
+}
+
 
 
 /*______________________________________________Models Page______________*/
@@ -292,6 +328,11 @@ body {
       width: 56px; /
     }
     
+  }
+  @media (min-width: 768px){
+    .cover-img{
+      aspect-ratio: 21/9;
+    }
   }
 @media (max-width: 991px) {
   .offcanvas {
