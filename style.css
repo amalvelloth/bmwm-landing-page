@@ -168,7 +168,10 @@ body {
   overflow: hidden;
 }
 
+
 .image-overlay {
+  margin: 0;
+  padding: 0;
   position: absolute;
   top: 50%;
   left: 0;
@@ -193,8 +196,11 @@ body {
 }
 
 .video-column video {
-  width: 100%;
-  height: auto;
+  display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
 }
 
 
